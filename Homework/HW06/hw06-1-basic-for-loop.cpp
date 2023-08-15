@@ -59,11 +59,11 @@ int main()
     printf("Enter the number of lines: ");
     scanf("%d", &numLines);
 
-        if (numLines % 2 != 0)
+        if (numLines % 2 != 1)
         { 
             for ( i = 0; i < numLines; i++)
             {
-               printf("[%d] Hello World\n", i);
+               printf("(%d) Hello World\n", i);
             }
 
         } 
@@ -71,7 +71,7 @@ int main()
         {
             for ( i = 0; i < numLines; i++)
             {
-                printf("(%d) Hello World\n", i);
+                printf("[%d] Hello World\n", i);
             }
         }
     return 0 ;
