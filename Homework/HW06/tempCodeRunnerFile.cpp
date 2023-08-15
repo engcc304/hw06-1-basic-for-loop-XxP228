@@ -1,5 +1,4 @@
-/*
-    ผู้ใช้กรอกจำนวนตัวเลข เพื่อพิมพ์คำว่า "Hello World" ตามจำนวนบรรทัดที่ผู้ใช้กรอก
+ผู้ใช้กรอกจำนวนตัวเลข เพื่อพิมพ์คำว่า "Hello World" ตามจำนวนบรรทัดที่ผู้ใช้กรอก
     หากผู้ใช้กรอกเลขคี่ ให้แสดงเลขบรรทัดโดยใช้ []
     หากผู้ใช้กรอกเลขคู่ ให้แสดงเลขบรรทัดโดยใช้ ()
     (โจทย์ข้อนี้ให้ใช้ For Loop เท่านั้น)
@@ -28,25 +27,3 @@
         [5] Hello World
         [6] Hello World
         [7] Hello World
-
-*/
-#include <stdio.h>
-
-int main() {
-    int numLines;
-
-    printf("Enter the number of lines: ");
-    scanf("%d", &numLines);
-
-    if (numLines % 2 == 0) {
-        for (int i = 1; i <= numLines; i++) {
-            printf("(%d) Hello World\n", i);
-        }
-    } else {
-        for (int i = 1; i <= numLines; i++) {
-            printf("[%d] Hello World\n", i);
-        }
-    }
-
-    return 0;
-}
