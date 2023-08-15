@@ -61,7 +61,7 @@ int main()
 
         if (numLines % 2 != 1)
         { 
-            for ( i = 0; i < numLines; i++)
+            for ( i = 1; i < numLines; i++)
             {
                printf("(%d) Hello World\n", i);
             }
@@ -69,7 +69,7 @@ int main()
         } 
         else if (numLines % 3 != 0)
         {
-            for ( i = 0; i < numLines; i++)
+            for ( i = 1; i < numLines; i++)
             {
                 printf("[%d] Hello World\n", i);
             }
